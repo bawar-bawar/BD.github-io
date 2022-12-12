@@ -160,19 +160,16 @@ document.ontouchstart = evt => birthday.onClick(evt)
 
 
 
-const checkbox = document.getElementById('onClick')
-const openGift = document.getElementById('click')
-const wishes = document.getElementById('wishes')
+let btn = document.getElementById('click')
+let x = document.getElementById('audio')
 
-checkbox.addEventListener('click', (event) => {
+btn.addEventListener('change', function() {
+      playAudio()
+});
 
-    openGift.style.transform = 'rotate(-110deg) scaleX(0.85)'
-    wishes.style.transform = 'translateY(-250px)'
-
-    wishes.style.fontSize = '37px'
-    wishes.style.width = '200px'
-
-})
+function playAudio() { 
+    x.play(); 
+} 
 
 
 
