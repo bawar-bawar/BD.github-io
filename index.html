@@ -1,19 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Masha Xatwn Birthday</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Yara's BirthDay</title>
 </head>
 <body>
-<link href='./style.css' rel='stylesheet'>
+<div class="w-full h-screen relative grid place-content-center" id="onClick">
 
-<body style="height:100%;width:100%">
+    <audio controls autoplay loop class="display-none">
+        <source src="./Happy Birthday - Piano ! BGM.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 
-<div style="height:100%;width:100%">
-        <canvas id=c></canvas>
-        <p style="text-align: center;width:100%">Your friend Bavar magic man</p>
+
+
+    <canvas id="birthday" class="absolute z-10"></canvas>
+
+    <div class="h-[50%] w-full absolute z-20 top-[20%]">
+     <div class="mb-32">
+        <p class="text-center text-6xl md:text-7xl text-white"> Click the box cover to open</p>
+     </div>
+   
+
+
+      <div class="w-full flex justify-center pt-24">
+        <div class="birthday-gift">
+      </div>
+      
+            <div class="gift">
+            <input id='click' type='checkbox'>
+            <label class='click' for='click'></label>
+            <div class="wishes text-white">Happy Birthday! YARAJAN</div>
+                 <div class="sparkles">
+                <div class="spark1"></div>
+                <div class="spark2"></div>
+                <div class="spark3"></div>
+                <div class="spark4"></div>
+                <div class="spark5"></div>
+                <div class="spark6"></div>
+              </div>
+              </div>
+          </div>
+    </div>
+
+
+
+
+<!--    <div class="absolute bottom-0 z-20">click to get the gift</div>-->
+
+
 </div>
-
 <script src="./index.js"></script>
 </body>
 </html>
